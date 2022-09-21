@@ -1,0 +1,16 @@
+@use 'base/mixins' as mx;
+
+.header {
+    padding-top: 5rem;
+
+    &__grid{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        @include mx.tablet{
+            flex-direction: row;
+            justify-content: space-between;
+        }
+    }
+}
