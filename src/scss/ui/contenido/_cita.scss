@@ -1,0 +1,38 @@
+@use 'base/mixins' as mx; 
+@use 'base/variables' as v; 
+
+.cita{
+
+    background-image: url(../img/bg_citas.jpg);
+    background-position: center center;
+    background-size: cover;
+    padding: 5rem 0;
+    text-align: center;
+    background-attachment: fixed;       //parallax
+
+    &__heading{
+        color: v.$blanco;
+        font-size: 6rem;
+        font-weight: 400;
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+    &__texto{
+        color: v.$blanco;
+        font-size: 1.5rem;
+        line-height: 2;
+        max-width: 60rem;
+        margin: 0 auto;
+
+    }
+
+    &__enlace{
+        @include mx.boton(v.$primario, v.$blanco);
+        display: inline-block;
+        padding: 2rem 10rem;
+
+
+    }
+
+}
